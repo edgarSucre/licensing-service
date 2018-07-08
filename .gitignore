@@ -27,3 +27,5 @@ target/
 .mvn/
 mvnw
 mvnw.cmd
+configurationserver.iml
+licensing-service.iml
