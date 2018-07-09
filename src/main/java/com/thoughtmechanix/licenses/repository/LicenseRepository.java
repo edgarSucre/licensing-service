@@ -1,0 +1,11 @@
+package com.thoughtmechanix.licenses.repository;
+
+import com.thoughtmechanix.licenses.models.License;
+import org.springframework.data.repository.CrudRepository;
+
+import java.util.List;
+
+public interface LicenseRepository extends CrudRepository<License, String> {
+    public List<License> findByOrganizationId(String organizationId);
+    public License findByOrganizationIdAndId(String organizationId, String id);
+}

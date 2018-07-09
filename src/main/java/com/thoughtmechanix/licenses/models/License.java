@@ -1,9 +1,23 @@
 package com.thoughtmechanix.licenses.models;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "licenses")
 public class License {
+    @Id
     private String id;
+
+    @Column(name = "product_name")
     private String productName;
+
+    @Column(name = "license_type")
     private String licenseType;
+
+    @Column(name = "orgaization_id")
     private String organizationId;
 
     public License() {
