@@ -21,6 +21,10 @@ public class LicenseService {
         return licenseRepository.findByOrganizationIdAndId(organizationId, licenseId);
     }
 
+    public License getLicense(String organizationId, String licenseId, String clientType) {
+        return licenseRepository.findByOrganizationIdAndId(organizationId, licenseId);
+    }
+
     public List<License> getlicensesByOrganization(String organizationId) {
         return licenseRepository.findByOrganizationId(organizationId);
     }
